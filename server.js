@@ -1,4 +1,4 @@
-// HTTP module approach
+// ====== HTTP module approach ======
 // const http = require('http');
 
 // const server = http.createServer(function(req, res) {
@@ -10,14 +10,16 @@
 // });
 
 
-// EXPRESS approach
+// ====== EXPRESS approach ======
 const express = require('express');
 
 const app = express();
 
-app.get('/', function(req, res){
-  res.send('Hello world');
-});
+
+const router = require('./app/routes');
+app.use('/', router);
+
+app.use(express.static(__dirname + '/public'));
 
 app.listen(3000, function(){
   console.log('Listeting on port 3000...');
