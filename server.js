@@ -12,9 +12,16 @@
 
 // ====== EXPRESS approach ======
 const express = require('express');
+const ejsLayouts = require('express-ejs-layouts');
+const bodyParser = require('body-parser');
 
 const app = express();
 
+
+app.set('view engine', 'ejs');
+app.use(ejsLayouts);
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const router = require('./app/routes');
 app.use('/', router);

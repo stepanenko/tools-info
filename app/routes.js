@@ -5,18 +5,27 @@ const path = require('path');
 const router = express.Router();
 
 
-router.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, '../index.html'));
+router.get('/', function(req, res) {
+  res.render('pages/home');
 });
 
 router.get('/about', function(req, res){
-  res.send('about page')
+  users = [
+    { name: 'John', age: 65 },
+    { name: 'Bill', age: 45 },
+    { name: 'Larry', age: 34 },
+    { name: 'Sarah', age: 53 }
+  ]
+  res.render('pages/about', { users: users });
 });
 
 router.get('/contact', function(req, res) {
-  res.send('Im a contact page');
+  res.render('pages/contact');
 });
 
-router.post('/contact');
+router.post('/contact', function(req, res) {
+  res.send(`Thanks for contacting us, ${req.body.name}! We will respond shortly.`);
+  console.log(req.body);
+});
 
 module.exports = router;
