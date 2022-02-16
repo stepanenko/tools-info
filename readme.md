@@ -1,4 +1,6 @@
 
+# Tools
+
 ## Parcel
 
 Link: https://parceljs.org/
@@ -14,3 +16,9 @@ In development, Parcel can defer building files until they are requested in the 
 Parcel optimizes your whole app for production automatically. This includes tree-shaking and minifying your JavaScript, CSS, and HTML, resizing and optimizing images, content hashing, automatic code splitting, and much more.
 
 Parcel automatically includes content hashes in the names of all output files. This enables **long-term browser caching**, because the output is guaranteed not to change unless the name does.
+
+## Nx
+
+Link: https://nx.dev/
+
+Nx is a smart, fast and extensible build system with first class monorepo support and powerful integrations.
