@@ -1,7 +1,23 @@
 
 # Tools
 
-## Parcel
+## Tested and Approved
+
+## To test
+
+- OpenReplay
+
+Link: https://github.com/openreplay/openreplay
+
+OpenReplay is a session replay stack that lets you see what users do on your web app, helping you troubleshoot issues faster. It's the only open-source alternative to products such as FullStory and LogRocket.
+
+---
+
+- Vite
+
+---
+
+- Parcel
 
 Link: https://parceljs.org/
 
@@ -17,8 +33,12 @@ Parcel optimizes your whole app for production automatically. This includes tree
 
 Parcel automatically includes content hashes in the names of all output files. This enables **long-term browser caching**, because the output is guaranteed not to change unless the name does.
 
-## Nx
+---
+
+- Nx
 
 Link: https://nx.dev/
 
 Nx is a smart, fast and extensible build system with first class monorepo support and powerful integrations.
+
+---
