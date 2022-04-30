@@ -3,6 +3,8 @@
 
 ## Tested and Approved
 
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates): `ncu`, `ncu -u`
+
 ## To test
 
 - OpenReplay
