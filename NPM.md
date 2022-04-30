@@ -3,7 +3,7 @@
 
 ## Commands:
 
-`npm adduser` / `npm login` - create or verify a user and save the credentials to the `.npmrc` file
+- `npm adduser` / `npm login` - create or verify a user and save the credentials to the `.npmrc` file
 
 Example:
 ```terminal
@@ -19,3 +19,12 @@ $ npm whoami
 stepanenko
 ```
 More: https://docs.npmjs.com/cli/v6/commands/npm-adduser
+
+- `-S` is the same as `--save`, and `-D` is the same as `--save-dev`
+- `npm list -g --depth=0` - show globally installed packages
+- `npm outdated -g --depth=0` - show outdated global packages
+- `npm update -g <package> <package> <package>...` - update global packages individually
+- `npm -g uninstall <name>` - uninstall global package
+- `npm install -g npm@latest` - update npm
+- `npm run` - list available scripts to run
+- `npm list` - show locallly installed packages
