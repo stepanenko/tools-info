@@ -5,7 +5,8 @@
 
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 
-Install: `npm install -g npm-check-updates`. Run `ncu` or `ncu -u`. Or run with npx: `npx npm-check-updates`
+Install: `npm install -g npm-check-updates`. Run `ncu` or `ncu -u`.  
+Or run with npx: `npx npm-check-updates`
 
 ## To test
 
