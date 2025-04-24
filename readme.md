@@ -3,6 +3,21 @@
 
 ## Tested and Approved
 
+### Serve the Build Locally
+
+Use a static file server to serve your production build. One of the simplest options is the `serve` package:
+
+- [serve](https://www.npmjs.com/package/serve)
+
+The `-s` flag enables Single Page Application (SPA) mode, ensuring that all routes are served correctly.
+
+Install: `npm install -g serve`. Run `serve -s dist`
+Run with npx: `npx serve -s dist`
+
+### Update packages to the latest versions
+
+Upgrades your `package.json` dependencies to the latest versions, ignoring specified versions
+
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 
 Install: `npm install -g npm-check-updates`. Run `ncu` or `ncu -u`.  
